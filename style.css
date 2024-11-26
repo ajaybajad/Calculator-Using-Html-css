@@ -81,11 +81,19 @@ form{
     box-shadow: -2px -2px 4px #a4a4a4 inset;
 }
 
+[type="button"]:hover{
+    background-color: #b3b2b2;
+    color: white;
+}
+
 .eval-btn{
     background-color: var(--equal-btn-color);
     color: #fff;
     box-shadow: -2px -2px 4px #494949 inset;
     width: 44%;
+}
+.eval-btn:hover{
+    background-color: red;
 }
 
 h3{
