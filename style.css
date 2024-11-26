@@ -1,0 +1,95 @@
+:root{
+    --base-color: #9BD6D4;
+    --calci-color: #575757;
+    --calci-shadow-color:#424242;
+    --btn-color: #ECECEC;
+    --input-field-color: #BCD1C0;
+    --equal-btn-color: #F8686F;
+    --text-color: #5F5F5F;
+}
+
+html,body{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face{
+    font-family: Digital7;
+    src: url(Digital7.ttf);
+}
+
+.container{
+    background-color: var(--base-color);
+    width: 100%;
+    height: 100vh;
+}
+
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.main-container{
+    background-color: var(--calci-color);
+    width: 320px;
+    height: 50vh;
+    border-radius: 20px;
+    box-shadow: -5px -5px 5px var(--calci-shadow-color) inset;
+}
+
+.display-input{
+    height: 18%;
+    display: flex;
+    justify-content: center;
+    padding-top: 14px;
+}
+
+.display-input input{
+    font-family: Digital7;
+    font-size: 2.5rem;
+    color: var(--text-color);
+    background-color: var(--input-field-color);
+    width: 80%;
+    padding: 5%;
+    border-radius: 14px;
+    box-shadow: -5px -5px 5px #a2b2a5 inset;
+    text-align: end;
+}
+
+.btn-wrapper{
+    display: grid;
+    gap: 16px;
+    padding-top: 4%;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: space-around;
+}
+
+[type="button"]{
+    width: 60px;
+    height: 35px;
+    font-size: 1.2rem;
+    background-color: var(--btn-color);
+    border-radius: 10px;
+    border: none;
+    font-weight: 600;
+    color: var(--text-color);
+    box-shadow: -2px -2px 4px #a4a4a4 inset;
+}
+
+.eval-btn{
+    background-color: var(--equal-btn-color);
+    color: #fff;
+    box-shadow: -2px -2px 4px #494949 inset;
+    width: 44%;
+}
+
+h3{
+    font-family: Digital7; 
+    text-align: center; 
+    color: white;
+}
